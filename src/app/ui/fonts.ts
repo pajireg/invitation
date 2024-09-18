@@ -15,3 +15,7 @@ export const greatVibes = localFont({
 export const notoSerif = localFont({
   src: '../fonts/NotoSerifKR-VariableFont_wght.ttf',
 });
+
+export const RIDIBatang = localFont({
+  src: '../fonts/RIDIBatang.otf',
+});

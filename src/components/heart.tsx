@@ -62,7 +62,7 @@ function Block({ accounts, who }: { accounts: Account[]; who: string }) {
     setOpen(!open);
   };
 
-  const onClickAccount = ({ bank, number, name }: Account) => {
+  const onClickAccount = ({ number }: Account) => {
     if (navigator?.clipboard) {
       navigator.clipboard.writeText(number).then(() => {
         alert("계좌번호가 복사되었습니다.");
@@ -79,7 +79,7 @@ function Block({ accounts, who }: { accounts: Account[]; who: string }) {
         onClick={onClickOpen}
       >
         <span className="text-lg font-semibold">{who}측 계좌번호</span>
-        <ArrowDownIcon className={`transform transition-transform ${open ? 'rotate-180' : ''}`} />
+        <ArrowDownIcon />
       </div>
       {open && (
         <div className="mt-4">
@@ -107,7 +107,7 @@ function Block({ accounts, who }: { accounts: Account[]; who: string }) {
   );
 }
 
-function ArrowDownIcon({ className }: { className?: string }) {
+function ArrowDownIcon() {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
       <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />

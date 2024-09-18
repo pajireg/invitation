@@ -1,8 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import BodyLayout from "./ui/body-layout";
+import Image from "next/image";
 
 const kakaoMapUrl = "https://place.map.kakao.com/18574260";
 const naverMapUrl = "https://naver.me/xmrPHMeL";
@@ -13,17 +13,17 @@ const maps = [
   {
     name: "카카오맵",
     url: kakaoMapUrl,
-    icon: "/icon/kakaomap.png",
+    icon: `/icon/kakaomap.png`,
   },
   {
     name: "네이버지도",
     url: naverMapUrl,
-    icon: "/icon/navermap.jpeg",
+    icon: `/icon/navermap.jpeg`,
   },
   {
     name: "티맵",
     url: tMapUrl,
-    icon: "/icon/tmap.jpeg",
+    icon: `/icon/tmap.jpeg`,
   },
 ];
 
@@ -53,8 +53,7 @@ export default function Location() {
       </div>
 
       <div className="my-8">
-        {/* <Image src="/image/thehue.jpg" alt="location" width={800} height={600} className="mx-auto" />       */}
-        <Image src="/image/thehue_location.jpg" alt="location" width={800} height={600} className="mx-auto" />      
+        <Image src={`/image/thehue_location.jpg`} alt="location" width={800} height={600} className="mx-auto" />      
       </div>
       <div className="p-4">
         <div className="mb-6">

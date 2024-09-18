@@ -1,3 +1,4 @@
+import Calendar from "@/components/calendar";
 import Divider from "@/components/divider";
 import Footer from "@/components/footer";
 import Gallery from "@/components/gallery";
@@ -18,6 +19,8 @@ export default function Home() {
 
       <Divider />
       <ThanksMessage />
+      <Divider />
+      <Calendar />
       <Divider />
       <Location />
       <Divider />
