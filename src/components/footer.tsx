@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 import React from 'react';
 
 export default function Footer() {
@@ -12,7 +13,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-gray-100 py-4">
+    <footer className="bg-gray-100 py-4 pb-8">
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-4">
         <div className="text-center text-gray-800">
           <div className="flex justify-center items-center cursor-pointer">
@@ -32,7 +33,8 @@ export default function Footer() {
             주소 복사
           </div>
           <br />
-          <p>© 디자인,개발 수민 & 현희</p>
+          <p>© 디자인,개발 수민&현희</p>
+          <Link className='underline' href="https://github.com/pajireg/invitation">https://github.com/pajireg/invitation</Link>
         </div>
       </div>
     </footer>

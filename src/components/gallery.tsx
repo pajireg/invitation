@@ -95,7 +95,7 @@ export default function Gallery() {
               </svg>
             </button>
             <button
-              className="absolute left-0 top-1/2 transform -translate-y-1/2 text-white"
+              className="absolute left-0 top-1/2 transform -translate-y-1/2 text-white py-8 px-4"
               onClick={handlePrevImage}
             >
               <svg
@@ -114,7 +114,7 @@ export default function Gallery() {
               </svg>
             </button>
             <button
-              className="absolute right-0 top-1/2 transform -translate-y-1/2 text-white"
+              className="absolute right-0 top-1/2 transform -translate-y-1/2 text-white py-8 px-4"
               onClick={handleNextImage}
             >
               <svg

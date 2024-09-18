@@ -47,7 +47,7 @@ export default function Location() {
               height={100}
               className="w-10 h-10 mb-2 rounded-full shadow-lg"
             />
-            <span className="text-sm font-semibold">{map.name}</span>
+            <span className="text-sm">{map.name}</span>
           </Link>
         ))}
       </div>

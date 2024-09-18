@@ -25,9 +25,3 @@ body {
     text-wrap: balance;
   }
 } */
-
-@font-face {
-  font-family: "GreatVibes";
-  font-weight: 200;
-  src: url("/src/app/fonts/GreatVibes-Regular.ttf") format("truetype");
-}

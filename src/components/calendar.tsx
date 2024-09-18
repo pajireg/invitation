@@ -1,8 +1,8 @@
 export default function Calendar() {
   return (
-    <div className="flex items-center justify-center py-8 px-4">
+    <div className="flex items-center justify-center py-8 px-4 bg-gray-100">
       <div className="max-w-sm w-full shadow-xl">
-        <div className="md:p-8 p-5 bg-white rounded-t">
+        <div className="md:p-8 p-5 bg-white rounded-t-lg ">
           <div className="px-4 flex items-center justify-between">
             <span tabIndex={0} className="focus:outline-none text-base font-bold text-gray-800">12월</span>
             <div className="flex items-center">
@@ -158,7 +158,7 @@ export default function Calendar() {
                   <td>
                     <div className="w-full h-full">
                       <div className="flex items-center justify-center w-full rounded-full cursor-pointer">
-                        <a role="link" tabIndex={0} className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 focus:bg-indigo-500 hover:bg-indigo-500 text-base w-8 h-8 flex items-center justify-center font-medium text-white bg-pink-500 rounded-full">21</a>
+                        <a role="link" tabIndex={0} className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-700 focus:bg-pink-500 hover:bg-pink-500 text-base w-8 h-8 flex items-center justify-center font-medium text-white bg-pink-500 rounded-full">21</a>
                       </div>
                     </div>
                   </td>
@@ -224,20 +224,14 @@ export default function Calendar() {
             </table>
           </div>
         </div>
-        {/* <div className="md:py-8 py-5 md:px-16 px-5 bg-gray-50 rounded-b">
+        <div className="md:py-8 py-5 md:px-16 px-5 bg-gray-50 rounded-b">
           <div className="px-4">
-            <div className="border-b pb-4 border-gray-400 border-dashed">
-              <p className="text-xs font-light leading-3 text-gray-500">2:00 PM</p>
-              <a tabIndex={0} className="focus:outline-none text-lg font-medium leading-5 text-gray-800 mt-2">더휴 웨딩홀 2층</a>
-              <p className="text-sm pt-2 leading-4 leading-none text-gray-600">Discussion on UX sprint and Wireframe review</p>
-            </div>
-            <div className="border-b pb-4 border-gray-400 border-dashed pt-5">
-              <p className="text-xs font-light leading-3 text-gray-500">1:30 PM ~ 3:30 PM</p>
-              <a tabIndex={0} className="focus:outline-none text-lg font-medium leading-5 text-gray-800 mt-2">더휴 웨딩홀 3층</a>
-              <p className="text-sm pt-2 leading-4 leading-none text-gray-600">연회장</p>
+            <div className="border-b border-t pb-4 pt-4 border-gray-400 border-dashed">
+              <p className="text-s font-light leading-3 text-gray-500 pb-2">2:00 PM</p>
+              <a tabIndex={0} className="focus:outline-none text-lg font-medium leading-5 text-gray-800 mt-2">더휴 웨딩홀 2층 단독홀</a>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
   );
