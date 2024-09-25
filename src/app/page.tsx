@@ -5,8 +5,8 @@ import Gallery from "@/components/gallery";
 import Heart from "@/components/heart";
 import Location from "@/components/location";
 import Main from "@/components/main";
+import Comment from "@/components/comment";
 import Message from "@/components/message";
-import ThanksMessage from "@/components/thanks-message";
 import Music from "@/components/ui/music";
 import TopButton from "@/components/ui/top-button";
 
@@ -18,7 +18,7 @@ export default function Home() {
       <Main />
 
       <Divider />
-      <ThanksMessage />
+      <Message />
       <Divider />
       <Calendar />
       <Divider />
@@ -28,7 +28,7 @@ export default function Home() {
       <Divider />
       <Heart />
       <Divider />
-      <Message />
+      <Comment />
 
       <Footer />
       <Music />

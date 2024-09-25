@@ -4,11 +4,11 @@ export default function Calendar() {
       <div className="max-w-sm w-full shadow-xl">
         <div className="md:p-8 p-5 bg-white rounded-t-lg ">
           <div className="px-4 flex items-center justify-between">
-            <span tabIndex={0} className="focus:outline-none text-base font-bold text-gray-800">12월</span>
+            <span tabIndex={0} className="focus:outline-none text-xl font-bold text-gray-800">12월</span>
             <div className="flex items-center">
             </div>
           </div>
-          <div className="flex items-center justify-between pt-12 overflow-x-auto">
+          <div className="flex items-center justify-between pt-6 overflow-x-auto">
             <table className="w-full">
               <thead>
                 <tr>
@@ -217,7 +217,24 @@ export default function Calendar() {
                     </div>
                   </td>
                   <td>
-                    <div className="px-2 py-2 cursor-pointer flex w-full justify-center"></div>
+                    <div className="px-2 py-2 cursor-pointer flex w-full justify-center">
+                      <p className="text-base text-red-200 font-medium">1</p>
+                    </div>
+                  </td>
+                  <td>
+                    <div className="px-2 py-2 cursor-pointer flex w-full justify-center">
+                      <p className="text-base text-gray-200 font-medium">26</p>
+                    </div>
+                  </td>
+                  <td>
+                    <div className="px-2 py-2 cursor-pointer flex w-full justify-center">
+                      <p className="text-base text-gray-200 font-medium">27</p>
+                    </div>
+                  </td>
+                  <td>
+                    <div className="px-2 py-2 cursor-pointer flex w-full justify-center">
+                      <p className="text-base text-gray-200 font-medium">28</p>
+                    </div>
                   </td>
                 </tr>
               </tbody>
