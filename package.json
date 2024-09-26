@@ -9,13 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^2.1.8",
     "@heroicons/react": "^2.1.5",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@vercel/postgres": "^0.10.0",
     "next": "14.2.11",
     "react": "^18",
     "react-dom": "^18",
-    "react-intersection-observer": "^9.13.1"
+    "react-intersection-observer": "^9.13.1",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/node": "^20",

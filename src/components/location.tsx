@@ -54,7 +54,7 @@ export default function Location() {
         </div>
 
         <div className="my-8">
-          {/* <Image src={`/image/thehue_location.jpg`} alt="location" width={800} height={600} className="mx-auto" />       */}
+          <Image src={`/image/thehue_location.jpg`} alt="location" width={800} height={600} className="mx-auto" />      
         </div>
         <div className="p-4">
           <div className="mb-6">
