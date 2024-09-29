@@ -30,7 +30,7 @@ export default function Music() {
 
   return (
     <div>
-      <audio ref={audioRef} src={`/music/winter.mp3`} loop />
+      <audio ref={audioRef} src={`/music/Uplifting.mp3`} loop />
       <div className="fixed bottom-4 left-4 cursor-pointer" onClick={toggleMusic}>
         {isPlaying ? (
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-8 h-8 text-gray-600">

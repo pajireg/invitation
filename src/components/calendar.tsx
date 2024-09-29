@@ -245,7 +245,7 @@ export default function Calendar() {
           <div className="px-4">
             <div className="border-b border-t pb-4 pt-4 border-gray-400 border-dashed">
               <p className="text-s font-light leading-3 text-gray-500 pb-2">2:00 PM</p>
-              <a tabIndex={0} className="focus:outline-none text-lg font-medium leading-5 text-gray-800 mt-2">더휴 웨딩홀 2층 단독홀</a>
+              <a tabIndex={0} className="focus:outline-none text-lg font-medium leading-5 text-gray-800 mt-2">더휴웨딩홀 2층 단독홀</a>
             </div>
           </div>
         </div>

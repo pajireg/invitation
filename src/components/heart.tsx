@@ -11,18 +11,13 @@ interface Account {
 
 const bAccounts: Account[] = [
   {
-    bank: "신한",
-    number: "123456789",
-    name: "최수민",
+    bank: "신한은행",
+    number: "110-246-252606",
+    name: "최행찬",
   },
   {
-    bank: "신한",
-    number: "123456789",
-    name: "최수민",
-  },
-  {
-    bank: "신한",
-    number: "123456789",
+    bank: "신한은행",
+    number: "110-246-252606",
     name: "최수민",
   },
 ];
@@ -49,7 +44,10 @@ export default function Heart() {
   return (
     <BodyLayout>
       <div className="max-w-2xl mx-auto px-4">
-        <h2 className="text-2xl font-bold text-center mb-6">마음 전하실 곳</h2>
+        <h2 className="text-xl font-bold text-center mb-6">ACCOUNT</h2>
+            <p className="text-gray-600 text-center mb-6">
+              축하의 마음을 담아 축의금을 전달해 보세요.
+            </p>
         <Block accounts={bAccounts} who="신랑" />
         <Block accounts={mAccounts} who="신부" />
       </div>

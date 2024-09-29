@@ -8,7 +8,7 @@ export default async function Comment() {
 
   return (
     <BodyLayout>
-      <h2 className="text-2xl font-bold text-center">축하 메시지</h2>
+      <h2 className="text-xl font-bold text-center">MESSAGE</h2>
 
       <section className="py-8 lg:py-12 antialiased">
         <div className="max-w-2xl mx-auto px-4">

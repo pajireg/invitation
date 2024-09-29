@@ -30,7 +30,7 @@ const maps = [
 export default function Location() {
   return (
     <BodyLayout>
-      <h2 className="text-2xl font-bold text-center">오시는 길</h2>
+      <h2 className="text-xl font-bold text-center">LOCATION</h2>
 
       <div className="max-w-2xl mx-auto px-4 py-4">
         <div className="flex flex-wrap justify-center items-center my-4 space-x-2">
@@ -60,7 +60,10 @@ export default function Location() {
           <div className="mb-6">
             <h3 className="text-xl font-semibold mb-2">🚗 주차</h3>
             <p className="text-gray-600">
-              더휴 웨딩홀 주차장 (<b>이케이타워 빌딩 지하</b>) - 강남구 삼성동 141-26
+            더휴웨딩홀 주차장
+            </p>
+            <p className="text-gray-600">
+            서울 강남구 테헤란로 407 이케이타워
             </p>
             <p className="text-gray-600">
               - 접수처 도장 날인시 2시간 무료
@@ -70,14 +73,17 @@ export default function Location() {
           <div className="mb-6">
             <h3 className="text-xl font-semibold mb-2">🚇 지하철</h3>
             <p className="text-gray-600">
-              <b>선릉역 10번 출구</b>에서 직진 도보 30초 더휴 웨딩홀 (<b>이케이타워 2층</b>)
+              선릉역 10번 출구에서 직진 도보 30초
+            </p>
+            <p className="text-gray-600">
+              더휴웨딩홀 (이케이타워 2층)
             </p>
           </div>
           
           <div>
             <h3 className="text-xl font-semibold mb-2">🚌 버스</h3>
             <p className="text-gray-600 mb-2">
-              <b>선릉역 정류장</b>에서 하차
+              선릉역 정류장에서 하차
             </p>
             <p className="text-gray-600">- 간선: 146, 341, 360, 740</p>
             <p className="text-gray-600">- 직행: 1100, 1700, 2000, 7007, 8001, 9303</p>
