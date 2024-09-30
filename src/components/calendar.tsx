@@ -1,7 +1,7 @@
 export default function Calendar() {
   return (
     <div className="flex items-center justify-center py-8 px-4 bg-gray-100">
-      <div className="max-w-sm w-full shadow-xl">
+      <div className="max-w-sm w-full">
         <div className="md:p-8 p-5 bg-white rounded-t-lg ">
           <div className="px-4 flex items-center justify-between">
             <span tabIndex={0} className="focus:outline-none text-xl font-bold text-gray-800">12월</span>
@@ -223,17 +223,17 @@ export default function Calendar() {
                   </td>
                   <td>
                     <div className="px-2 py-2 cursor-pointer flex w-full justify-center">
-                      <p className="text-base text-gray-200 font-medium">26</p>
+                      <p className="text-base text-gray-200 font-medium">2</p>
                     </div>
                   </td>
                   <td>
                     <div className="px-2 py-2 cursor-pointer flex w-full justify-center">
-                      <p className="text-base text-gray-200 font-medium">27</p>
+                      <p className="text-base text-gray-200 font-medium">3</p>
                     </div>
                   </td>
                   <td>
                     <div className="px-2 py-2 cursor-pointer flex w-full justify-center">
-                      <p className="text-base text-gray-200 font-medium">28</p>
+                      <p className="text-base text-gray-200 font-medium">4</p>
                     </div>
                   </td>
                 </tr>
