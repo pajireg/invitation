@@ -62,7 +62,7 @@ export default function Location() {
             <p className="text-gray-600">
             더휴웨딩홀 주차장
             </p>
-            <p className="text-gray-600">
+            <p className="text-gray-600 mb-2">
             서울 강남구 테헤란로 407 이케이타워
             </p>
             <p className="text-gray-600">

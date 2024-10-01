@@ -44,8 +44,13 @@ export default function ThanksMessage() {
           <p>&apos;우리&apos;라는 이름의 첫 시작,</p>
           <p>그 아름다운 순간에 소중한 분들을 초대합니다.</p>
           <br />
+          <br />
 
-          <hr />
+          <div className="px-10">
+            <hr />
+          </div>
+
+          <br />
           <br />
           <p><span className="text-xl">최행찬</span> · <span className="text-xl">김복숙</span> 의 장남 <span className="text-xl">수민</span></p>
           <p><span className="text-xl">이진우</span> · <span className="text-xl">권용선</span> 의 장녀 <span className="text-xl">현희</span></p>

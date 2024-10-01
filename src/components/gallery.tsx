@@ -76,7 +76,7 @@ export default function Gallery() {
             onClick={(e) => e.stopPropagation()}
           >
             <button
-              className="absolute top-0 right-0 m-4 text-white"
+              className="absolute top-3 right-3 text-white bg-black bg-opacity-50 rounded-full p-2"
               onClick={() => setSelectedImage(null)}
             >
               <svg
@@ -85,7 +85,7 @@ export default function Gallery() {
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
-                className="w-6 h-6"
+                className="size-6"
               >
                 <path
                   strokeLinecap="round"
@@ -95,7 +95,7 @@ export default function Gallery() {
               </svg>
             </button>
             <button
-              className="absolute left-0 top-1/2 transform -translate-y-1/2 text-white py-8 px-4"
+              className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white bg-black bg-opacity-50 rounded-full p-2"
               onClick={handlePrevImage}
             >
               <svg
@@ -104,7 +104,7 @@ export default function Gallery() {
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
-                className="w-8 h-8"
+                className="size-6"
               >
                 <path
                   strokeLinecap="round"
@@ -114,7 +114,7 @@ export default function Gallery() {
               </svg>
             </button>
             <button
-              className="absolute right-0 top-1/2 transform -translate-y-1/2 text-white py-8 px-4"
+              className="absolute right-3 top-1/2 transform -translate-y-1/2 text-white bg-black bg-opacity-50 rounded-full p-2"
               onClick={handleNextImage}
             >
               <svg
@@ -123,7 +123,7 @@ export default function Gallery() {
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
-                className="w-8 h-8"
+                className="size-6"
               >
                 <path
                   strokeLinecap="round"
@@ -138,7 +138,6 @@ export default function Gallery() {
               width={800}
               height={800}
               className="max-h-screen max-w-screen cursor-pointer object-contain"
-              onClick={() => setSelectedImage(null)}
             />
           </div>
         </div>

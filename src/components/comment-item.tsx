@@ -113,7 +113,7 @@ export default function CommentItem({
                 </div>
               </div>
             </footer>
-            <p className="text-gray-600">{comment.message}</p>
+            <p className="text-gray-600" style={{ whiteSpace: 'pre-wrap' }}>{comment.message}</p>
           </div>
         </div>
       ))}

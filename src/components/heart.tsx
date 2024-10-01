@@ -12,8 +12,13 @@ interface Account {
 const bAccounts: Account[] = [
   {
     bank: "신한은행",
-    number: "110-246-252606",
+    number: "110-035-130325",
     name: "최행찬",
+  },
+  {
+    bank: "NH농협",
+    number: "312-0033-1120-11",
+    name: "김복숙",
   },
   {
     bank: "신한은행",
@@ -64,6 +69,7 @@ function Block({ accounts, who }: { accounts: Account[]; who: string }) {
 
   const onClickAccount = ({ number }: Account) => {
     if (navigator?.clipboard) {
+      number.replace(/-/g, "");
       navigator.clipboard.writeText(number).then(() => {
         alert("계좌번호가 복사되었습니다.");
       });
