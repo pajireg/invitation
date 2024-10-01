@@ -24,8 +24,8 @@ export default function ThanksMessage() {
 
           <br />
           <br />
-          <p><span className="text-xl">최행찬</span> · <span className="text-xl">김복숙</span> 의 장남 <span className="text-xl">수민</span></p>
-          <p><span className="text-xl">이진우</span> · <span className="text-xl">권용선</span> 의 장녀 <span className="text-xl">현희</span></p>
+          <p><span className="text-lg">최행찬</span> · <span className="text-lg">김복숙</span> 의 장남 <span className="text-lg">수민</span></p>
+          <p><span className="text-lg">이진우</span> · <span className="text-lg">권용선</span> 의 장녀 <span className="text-lg">현희</span></p>
           <br />
         </div>
     </BodyLayout>

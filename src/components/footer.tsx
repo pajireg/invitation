@@ -13,10 +13,10 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-gray-100 py-4 pb-8">
+    <footer className="bg-gray-100 py-4 pb-10">
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-4">
         <div className="text-center text-gray-800">
-          <div className="flex justify-center items-center cursor-pointer">
+          {/* <div className="flex justify-center items-center cursor-pointer">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 208 191.94" className="w-5 h-5 mr-2">
               <g>
                 <polygon className="cls-1" points="76.01 89.49 87.99 89.49 87.99 89.49 82 72.47 76.01 89.49"/>
@@ -25,8 +25,8 @@ export default function Footer() {
             </svg>
             카카오톡 공유
           </div>
-          <br />
-          <div className="flex justify-center items-center cursor-pointer" onClick={copyAddress}>
+          <br /> */}
+          <div className="flex justify-center items-center cursor-pointer p-2" onClick={copyAddress}>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 mr-2">
               <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
             </svg>

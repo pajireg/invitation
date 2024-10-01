@@ -33,7 +33,7 @@ export default function Location() {
       <h2 className="text-xl text-center mt-2">LOCATION</h2>
 
       <div className="max-w-2xl mx-auto px-4 py-4">
-        <div className="flex flex-wrap justify-center items-center my-4 space-x-2">
+        <div className="flex flex-wrap justify-center items-center my-4 space-x-3">
           {maps.map((map) => (
             <Link
               href={map.url}
@@ -46,7 +46,7 @@ export default function Location() {
                 alt={`${map.name} icon`}
                 width={100}
                 height={100}
-                className="w-10 h-10 mb-2 rounded-full shadow-lg"
+                className="w-10 h-10 mb-2 rounded-full shadow-md"
               />
               <span className="text-sm">{map.name}</span>
             </Link>
@@ -58,7 +58,7 @@ export default function Location() {
         </div>
         <div className="p-4">
           <div className="mb-6">
-            <h3 className="text-xl font-semibold mb-2">🚗 주차</h3>
+            <h3 className="text-lg mb-2">🚗 주차</h3>
             <p className="text-gray-600">
             더휴웨딩홀 주차장
             </p>
@@ -71,7 +71,7 @@ export default function Location() {
           </div>
           
           <div className="mb-6">
-            <h3 className="text-xl font-semibold mb-2">🚇 지하철</h3>
+            <h3 className="text-lg mb-2">🚇 지하철</h3>
             <p className="text-gray-600">
               선릉역 10번 출구에서 직진 도보 30초
             </p>
@@ -81,7 +81,7 @@ export default function Location() {
           </div>
           
           <div>
-            <h3 className="text-xl font-semibold mb-2">🚌 버스</h3>
+            <h3 className="text-lg mb-2">🚌 버스</h3>
             <p className="text-gray-600 mb-2">
               선릉역 정류장에서 하차
             </p>

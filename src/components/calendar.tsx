@@ -4,7 +4,7 @@ export default function Calendar() {
       <div className="max-w-sm w-full">
         <div className="md:p-8 p-5 bg-white rounded-t-lg ">
           <div className="px-4 flex items-center justify-between">
-            <span tabIndex={0} className="focus:outline-none text-xl font-bold text-gray-800">12월</span>
+            <span tabIndex={0} className="focus:outline-none text-xl text-gray-800">12월</span>
             <div className="flex items-center">
             </div>
           </div>
@@ -243,10 +243,12 @@ export default function Calendar() {
         </div>
         <div className="md:py-8 py-5 md:px-16 px-5 bg-gray-50 rounded-b">
           <div className="px-4">
-            <div className="border-b border-t pb-4 pt-4 border-gray-400 border-dashed">
+            <hr />
+            <div className="pb-4 pt-4">
               <p className="text-s font-light leading-3 text-gray-500 pb-2">2:00 PM</p>
               <a tabIndex={0} className="focus:outline-none text-lg font-medium leading-5 text-gray-800 mt-2">더휴웨딩홀 2층 단독홀</a>
             </div>
+            <hr />
           </div>
         </div>
       </div>

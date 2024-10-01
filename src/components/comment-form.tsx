@@ -149,7 +149,7 @@ const CommentForm = () => {
 				<div className="flex justify-end">
 					<button
 						type="submit"
-						className="inline-flex items-center py-2.5 px-4 font-medium text-center text-white bg-pink-700 rounded-lg focus:ring-4 focus:ring-pink-200 hover:bg-pink-800"
+						className="inline-flex items-center py-2.5 px-4 font-medium text-center text-white bg-pink-600 rounded-lg focus:ring-4 focus:ring-pink-200 hover:bg-pink-700"
 						disabled={loading}
 					>
 						글쓰기

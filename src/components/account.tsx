@@ -95,12 +95,12 @@ function Block({ accounts, who }: { accounts: Account[]; who: string }) {
               className="flex justify-between items-center border-t py-2"
             >
               <div className="flex flex-col md:flex-row md:items-center md:space-x-4">
-                <span className="text-gray-700">{account.bank}</span>
+                <span className="text-gray-800">{account.bank}</span>
                 <span className="text-gray-500">{account.number}</span>
-                <b className="text-gray-900">{account.name}</b>
+                <span className="text-gray-800 font-semibold">{account.name}</span>
               </div>
               <button
-                className="bg-pink-500 text-white px-3 py-1 rounded hover:bg-pink-600"
+                className="bg-pink-600 text-white px-3 py-1 rounded hover:bg-pink-700"
                 onClick={() => onClickAccount(account)}
               >
                 복사
