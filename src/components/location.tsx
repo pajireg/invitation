@@ -30,7 +30,7 @@ const maps = [
 export default function Location() {
   return (
     <BodyLayout>
-      <h2 className="text-xl font-bold text-center">LOCATION</h2>
+      <h2 className="text-xl text-center mt-2">LOCATION</h2>
 
       <div className="max-w-2xl mx-auto px-4 py-4">
         <div className="flex flex-wrap justify-center items-center my-4 space-x-2">

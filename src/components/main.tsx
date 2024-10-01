@@ -3,10 +3,10 @@ import Image from "next/image";
 export default function Main() {
   return (
     <div className="flex flex-col h-screen">
-      <div className="relative w-full h-2/4 bg-cover bg-center">
+      <div className="relative w-full h-3/5 bg-cover bg-center">
         <Image src="/image/main.jpeg" alt="Main" width={500} height={500} className="w-full h-full object-cover" />
       </div>
-      <div className="flex flex-col justify-center items-center h-1/2 bg-white">
+      <div className="flex flex-col justify-center items-center h-2/5 bg-white">
         <br />
         <div className="flex items-center space-x-4">
           <div className="flex flex-col items-center space-y-1">

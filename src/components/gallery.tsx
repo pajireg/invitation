@@ -47,7 +47,7 @@ export default function Gallery() {
 
   return (
     <BodyLayout>
-      <h2 className="text-xl font-bold text-center">GALLERY</h2>
+      <h2 className="text-xl text-center mt-2">GALLERY</h2>
       <div className="mt-6 grid gap-2 lg:gap-6 grid-cols-3 py-4">
         {images.map((image) => (
           <div key={image} className="group relative">
