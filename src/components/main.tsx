@@ -8,9 +8,19 @@ export default function Main() {
       </div>
       <div className="flex flex-col justify-center items-center h-1/2 bg-white">
         <br />
-        <p className="text-gray-800 text-2xl mb-4">
-          <span>수 민</span> <span className="font-light text-gray-200 text-xl"> | </span> <span>현 희</span>
-        </p>
+        <div className="flex items-center space-x-4">
+          <div className="flex flex-col items-center space-y-1">
+            <span className="text-pink-400 text-sm">GROOM</span>
+            <span className="text-2xl">수&nbsp;&nbsp;민</span>
+          </div>
+          <div className="font-light text-pink-200 text-xl mx-8 px-4">
+            |
+          </div>
+          <div className="flex flex-col items-center space-y-1">
+            <span className="text-pink-400 text-sm">BRIDE</span>
+            <span className="text-2xl">현&nbsp;&nbsp;희</span>
+          </div>
+        </div>
         <br />
         <p className="text-gray-600">2024년 12월 21일 토요일 오후 2시</p>
         <p className="text-gray-600">더휴웨딩홀 2층 단독홀</p>
