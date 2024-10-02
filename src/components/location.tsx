@@ -3,6 +3,7 @@
 import Link from "next/link";
 import BodyLayout from "./ui/body-layout";
 import Image from "next/image";
+import Title from "./ui/title";
 
 const kakaoMapUrl = "https://place.map.kakao.com/18574260";
 const naverMapUrl = "https://naver.me/xmrPHMeL";
@@ -30,8 +31,7 @@ const maps = [
 export default function Location() {
   return (
     <BodyLayout>
-      <h2 className="text-xl text-center mt-2">LOCATION</h2>
-
+      <Title title="LOCATION" />
       <div className="max-w-2xl mx-auto px-4 py-4">
         <div className="flex flex-wrap justify-center items-center my-4 space-x-3">
           {maps.map((map) => (

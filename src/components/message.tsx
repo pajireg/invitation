@@ -1,9 +1,10 @@
 import BodyLayout from "./ui/body-layout";
+import Title from "./ui/title";
 
 export default function ThanksMessage() {
   return (
     <BodyLayout>
-      <h2 className="text-xl text-center mt-2">INVITATION</h2>
+      <Title title="INVITATION" />
         <div className="text-center text-sm lg:text-lg text-gray-600">
           <br />
           <br />

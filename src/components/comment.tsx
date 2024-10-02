@@ -2,14 +2,14 @@ import { fetchComments } from "@/lib/data";
 import CommentItem from "./comment-item";
 import BodyLayout from "./ui/body-layout";
 import CommentForm from "./comment-form";
+import Title from "./ui/title";
 
 export default async function Comment() {
   const comments = await fetchComments();
 
   return (
     <BodyLayout>
-      <h2 className="text-xl text-center mt-2">MESSAGE</h2>
-
+      <Title title="COMMENT" />
       <section className="py-8 lg:py-12 antialiased">
         <div className="max-w-2xl mx-auto px-4">
 

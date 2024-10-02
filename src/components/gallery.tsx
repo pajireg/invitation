@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import BodyLayout from "./ui/body-layout";
 import Image from "next/image";
+import Title from "./ui/title";
 
 export default function Gallery() {
   const images = [
@@ -47,7 +48,7 @@ export default function Gallery() {
 
   return (
     <BodyLayout>
-      <h2 className="text-xl text-center mt-2">GALLERY</h2>
+      <Title title="GALLERY" />
       <div className="mt-6 grid gap-2 lg:gap-6 grid-cols-3 py-4">
         {images.map((image) => (
           <div key={image} className="group relative">

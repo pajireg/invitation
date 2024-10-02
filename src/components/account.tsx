@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import BodyLayout from "./ui/body-layout";
+import Title from "./ui/title";
 
 interface Account {
   bank: string;
@@ -49,8 +50,8 @@ export default function Account() {
   return (
     <BodyLayout>
       <div className="max-w-2xl mx-auto px-4">
-        <h2 className="text-xl text-center mt-2 mb-8">ACCOUNT</h2>
-            <p className="text-gray-600 text-center text-sm mb-6">
+        <Title title="ACCOUNT" />
+            <p className="text-gray-600 text-center text-sm mt-8 mb-6">
               축하의 마음을 담아 축의금을 전달해 보세요.
             </p>
         <Block accounts={bAccounts} who="신랑" />
