@@ -6,18 +6,18 @@ import Title from "./ui/title";
 
 export default function Gallery() {
   const images = [
-    "image1.jpg",
-    "image2.jpg",
-    "image3.jpg",
-    "image4.jpg",
-    "image5.jpg",
-    "image6.jpg",
-    "image7.jpg",
-    "image8.jpg",
-    "image9.jpg",
-    "image10.jpg",
-    "image11.jpg",
-    "image12.jpg",
+    "https://1drv.ms/i/s!Ai8p48X6HRWGozBsg9pHPVtCvplb?embed=1&height=1024",
+    "https://1drv.ms/i/s!Ai8p48X6HRWGozicssCXvFpAKfQ9?embed=1&width=1024",
+    "https://1drv.ms/i/s!Ai8p48X6HRWGozJtKAaraU52Bjo7?embed=1&width=1024",
+    "https://1drv.ms/i/s!Ai8p48X6HRWGoy5beoZ7pKPnqRaV?embed=1&width=1024",
+    "https://1drv.ms/i/s!Ai8p48X6HRWGozTdDlqj_oHTzXup?embed=1&height=1024",
+    "https://1drv.ms/i/s!Ai8p48X6HRWGozEuZhUHZPpMwnhJ?embed=1&height=1024",
+    "https://1drv.ms/i/s!Ai8p48X6HRWGoy1CKt0OOwbo2-VA?embed=1&height=1024",
+    "https://1drv.ms/i/s!Ai8p48X6HRWGozUVD7aGruR2qg4I?embed=1&height=1024",
+    "https://1drv.ms/i/s!Ai8p48X6HRWGozcZ3MssYptcdrq-?embed=1&height=1024",
+    "https://1drv.ms/i/s!Ai8p48X6HRWGoy9lRrCLrU07UbGC?embed=1&height=1024",
+    "https://1drv.ms/i/s!Ai8p48X6HRWGozZnGztBdfS1fT0E?embed=1&height=1024",
+    "https://1drv.ms/i/s!Ai8p48X6HRWGoyyidGLtObwzhM5p?embed=1&width=1024",
   ];
 
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -58,7 +58,7 @@ export default function Gallery() {
             >
               <Image
                 alt={image}
-                src={`/image/gallery/${image}`}
+                src={`${image}`}
                 className="h-full w-full object-cover object-center cursor-pointer"
                 width={800}
                 height={800}
@@ -135,7 +135,7 @@ export default function Gallery() {
             </button>
             <Image
               alt={selectedImage}
-              src={`/image/gallery/${selectedImage}`}
+              src={`${selectedImage}`}
               width={800}
               height={800}
               className="max-h-screen max-w-screen cursor-pointer object-contain"

@@ -28,7 +28,7 @@ export default function RootLayout({
         <meta name="description" content="12월 21일 오후 2시" />
         <meta property="og:title" content="수민 ❤️ 현희 결혼합니다" />
         <meta property="og:description" content="12월 21일 오후 2시" />
-        <meta property="og:image" content="/image/main.jpeg" />
+        <meta property="og:image" content="https://1drv.ms/i/s!Ai8p48X6HRWGozOLKQTFxQYlPzpM?embed=1&height=1024" />
       </head>
       <body className={`${RIDIBatang.className}`}>
         {children}
