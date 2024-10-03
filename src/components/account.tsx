@@ -37,7 +37,7 @@ const mAccounts: Account[] = [
   {
     bank: "신한은행",
     number: "110-038-549442",
-    name: "정현희",
+    name: "권용선",
   },
   {
     bank: "하나은행",
