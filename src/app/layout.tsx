@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>수민&현희 청첩장</title>
+        <title>수민 ❤️ 현희 결혼합니다</title>
         <meta name="description" content="12월 21일 오후 2시" />
         <meta property="og:title" content="수민 ❤️ 현희 결혼합니다" />
         <meta property="og:description" content="12월 21일 오후 2시" />
