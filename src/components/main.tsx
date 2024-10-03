@@ -16,7 +16,7 @@ export default function Main() {
           </div>
         )}
         <img
-          src="https://1drv.ms/i/s!Ai8p48X6HRWGozOLKQTFxQYlPzpM?embed=1&height=1024"
+          src="/image/main.jpg"
           alt="Main"
           className={`w-full h-full object-cover ${isLoading ? 'hidden' : 'block'}`}
           onLoad={() => setIsLoading(false)}
