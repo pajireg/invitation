@@ -9,7 +9,7 @@ export default async function Comment() {
 
   return (
     <BodyLayout>
-      <Title title="COMMENT" />
+      <Title title="MESSAGE" />
       <section className="py-8 lg:py-12 antialiased">
         <div className="max-w-2xl mx-auto px-4">
 
