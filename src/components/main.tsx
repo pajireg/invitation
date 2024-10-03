@@ -1,10 +1,8 @@
-import Image from "next/image";
-
 export default function Main() {
   return (
     <div className="flex flex-col h-screen">
       <div className="relative w-full h-3/5 bg-cover bg-center">
-        <Image src="https://1drv.ms/i/s!Ai8p48X6HRWGozOLKQTFxQYlPzpM?embed=1&height=1024" alt="Main" width={500} height={500} className="w-full h-full object-cover" />
+        <img src="https://1drv.ms/i/s!Ai8p48X6HRWGozOLKQTFxQYlPzpM?embed=1&height=1024" alt="Main" className="w-full h-full object-cover" />
       </div>
       <div className="flex flex-col justify-center items-center h-2/5 bg-white">
         <br />

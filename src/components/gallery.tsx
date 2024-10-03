@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
 import BodyLayout from "./ui/body-layout";
-import Image from "next/image";
 import Title from "./ui/title";
 
 export default function Gallery() {
@@ -56,12 +55,10 @@ export default function Gallery() {
               className="relative w-full overflow-hidden rounded-md bg-white aspect-w-1 aspect-h-1 group-hover:opacity-75"
               onClick={() => setSelectedImage(selectedImage === image ? null : image)}
             >
-              <Image
+              <img
                 alt={image}
                 src={`${image}`}
                 className="h-full w-full object-cover object-center cursor-pointer"
-                width={800}
-                height={800}
               />
             </div>
           </div>
@@ -133,11 +130,9 @@ export default function Gallery() {
                 />
               </svg>
             </button>
-            <Image
+            <img
               alt={selectedImage}
               src={`${selectedImage}`}
-              width={800}
-              height={800}
               className="max-h-screen max-w-screen cursor-pointer object-contain"
             />
           </div>
