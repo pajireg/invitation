@@ -22,26 +22,26 @@ const bAccounts: Account[] = [
     name: "김복숙",
   },
   {
-    bank: "신한은행",
-    number: "110-246-252606",
+    bank: "토스뱅크",
+    number: "1000-2031-3328",
     name: "최수민",
   },
 ];
 
 const mAccounts: Account[] = [
   {
-    bank: "신한",
-    number: "123456789",
+    bank: "신한은행",
+    number: "110-433-874676",
+    name: "이진우",
+  },
+  {
+    bank: "신한은행",
+    number: "110-038-549442",
     name: "정현희",
   },
   {
-    bank: "신한",
-    number: "123456789",
-    name: "정현희",
-  },
-  {
-    bank: "신한",
-    number: "123456789",
+    bank: "하나은행",
+    number: "276-910031-53207",
     name: "정현희",
   },
 ];
