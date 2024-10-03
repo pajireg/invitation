@@ -5,7 +5,7 @@ export default function ThanksMessage() {
   return (
     <BodyLayout>
       <Title title="INVITATION" />
-        <div className="text-center text-sm lg:text-lg text-gray-600">
+        <div className="text-center lg:text-lg text-gray-600">
           <br />
           <br />
           <p> 차가운 겨울, 저희 두 사람은 서로의 온기가 되어</p>
