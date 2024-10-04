@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Main() {
@@ -15,9 +16,11 @@ export default function Main() {
             </div>
           </div>
         )}
-        <img
+        <Image
           src="/image/main.jpg"
           alt="Main"
+          width={600}
+          height={600}
           className={`w-full h-full object-cover ${isLoading ? 'hidden' : 'block'}`}
           onLoad={() => setIsLoading(false)}
         />
