@@ -1,30 +1,48 @@
 "use client";
 
 import React, { useEffect, useState } from 'react';
-import useWindowSize from 'react-use/lib/useWindowSize'
-import Confetti from 'react-confetti'
+import Confetti from 'react-confetti';
 
 export default function ConfettiUi() {
-  const { width, height } = useWindowSize();
   const [isClient, setIsClient] = useState(false);
+  const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
+  const [pieces, setPieces] = useState(0);
 
   useEffect(() => {
     setIsClient(true);
+    const updateDimensions = () => {
+      setDimensions({ width: window.innerWidth, height: document.body.scrollHeight });
+    };
+    updateDimensions();
+    window.addEventListener('resize', updateDimensions);
+    return () => window.removeEventListener('resize', updateDimensions);
   }, []);
+
+  useEffect(() => {
+    if (isClient) {
+      setPieces((prev) => prev + 5);
+
+      const interval = setInterval(() => {
+        setPieces((prev) => prev + 5);
+      }, 3000);
+
+      return () => clearInterval(interval);
+    }
+  }, [isClient]);
 
   if (!isClient) {
     return null;
   }
 
   return (
-    <div className="fixed inset-0 z-50 pointer-events-none">
+    <div className="w-full h-full pointer-events-none">
       <Confetti
-        width={width}
-        height={height}
+        width={dimensions.width}
+        height={dimensions.height}
         colors={["gold", "yellow"]}
         opacity={0.5}
         gravity={0.01}
-        numberOfPieces={10}
+        numberOfPieces={pieces}
         drawShape={(ctx) => {
           ctx.fillRect(-5, -5, 12, 12);
         }}
