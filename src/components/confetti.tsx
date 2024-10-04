@@ -19,7 +19,7 @@ export default function ConfettiUi() {
   }, []);
 
   useEffect(() => {
-    setPieces((prev) => prev + 3);
+    setPieces((prev) => prev + 6);
     if (isClient) {
       const interval = setInterval(() => {
         setPieces((prev) => prev + 3);
