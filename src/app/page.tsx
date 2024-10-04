@@ -9,14 +9,15 @@ import Comment from "@/components/comment";
 import Message from "@/components/message";
 import Music from "@/components/ui/music";
 import TopButton from "@/components/ui/top-button";
+import ConfettiUi from "@/components/confetti";
 
 export default function Home() {
  
 
   return (
     <div>
+      <ConfettiUi />
       <Main />
-
       <Divider />
       <Message />
       <Divider />
