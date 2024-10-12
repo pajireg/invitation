@@ -1,6 +1,6 @@
 # 내손으로 직접 만든 청첩장
 
-Url [https://sumin-hyunhee.vercel.app](https://sumin-hyunhee.vercel.app)
+Url: [https://sumin-hyunhee.vercel.app](https://sumin-hyunhee.vercel.app)
 
 ## Run
 
