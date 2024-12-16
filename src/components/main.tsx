@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Main() {
@@ -7,18 +8,26 @@ export default function Main() {
     <div className="flex flex-col h-screen">
       <div className="relative w-full h-3/5 bg-cover bg-center">
         {isLoading && (
-          <div className="w-full h-full animate-pulse">
-            <div className="flex items-center justify-center w-full h-full bg-slate-200">
-              <svg className="w-10 h-10 text-slate-100" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
-                <path d="M18 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4.376 10.481A1 1 0 0 1 16 15H4a1 1 0 0 1-.895-1.447l3.5-7A1 1 0 0 1 7.468 6a.965.965 0 0 1 .9.5l2.775 4.757 1.546-1.887a1 1 0 0 1 1.618.1l2.541 4a1 1 0 0 1 .028 1.011Z"/>
-              </svg>
-            </div>
+          <div className="absolute inset-0 flex items-center justify-center bg-slate-200 animate-pulse">
+            <svg
+              className="w-10 h-10 text-slate-100"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 18"
+              aria-hidden="true"
+            >
+              <path d="M18 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4.376 10.481A1 1 0 0 1 16 15H4a1 1 0 0 1-.895-1.447l3.5-7A1 1 0 0 1 7.468 6a.965.965 0 0 1 .9.5l2.775 4.757 1.546-1.887a1 1 0 0 1 1.618.1l2.541 4a1 1 0 0 1 .028 1.011Z" />
+            </svg>
           </div>
         )}
-        <img
+        <Image
           src="/image/main.jpg"
           alt="Main"
-          className={`w-full h-full object-cover ${isLoading ? 'hidden' : 'block'}`}
+          width={600}
+          height={600}
+          className={`w-full h-full object-cover transition-opacity ${
+            isLoading ? 'opacity-0' : 'opacity-100'
+          }`}
           onLoad={() => setIsLoading(false)}
         />
       </div>
