@@ -21,7 +21,7 @@ export default function Main() {
           </div>
         )}
         <Image
-          src="/image/main.jpg"
+          src="https://res.cloudinary.com/dxmhi8ebw/image/upload/v1734323250/main_fhdy2z.jpg"
           alt="Main"
           width={600}
           height={600}

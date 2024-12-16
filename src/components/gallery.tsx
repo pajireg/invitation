@@ -2,21 +2,22 @@
 import { useState, useEffect } from "react";
 import BodyLayout from "./ui/body-layout";
 import Title from "./ui/title";
+import Image from "next/image";
 
 export default function Gallery() {
   const images = [
-    "https://1drv.ms/i/s!Ai8p48X6HRWGozBsg9pHPVtCvplb?embed=1&height=1024",
-    "https://1drv.ms/i/s!Ai8p48X6HRWGozicssCXvFpAKfQ9?embed=1&width=1024",
-    "https://1drv.ms/i/s!Ai8p48X6HRWGozJtKAaraU52Bjo7?embed=1&width=1024",
-    "https://1drv.ms/i/s!Ai8p48X6HRWGoy5beoZ7pKPnqRaV?embed=1&width=1024",
-    "https://1drv.ms/i/s!Ai8p48X6HRWGozTdDlqj_oHTzXup?embed=1&height=1024",
-    "https://1drv.ms/i/s!Ai8p48X6HRWGozEuZhUHZPpMwnhJ?embed=1&height=1024",
-    "https://1drv.ms/i/s!Ai8p48X6HRWGoy1CKt0OOwbo2-VA?embed=1&height=1024",
-    "https://1drv.ms/i/s!Ai8p48X6HRWGozUVD7aGruR2qg4I?embed=1&height=1024",
-    "https://1drv.ms/i/s!Ai8p48X6HRWGozcZ3MssYptcdrq-?embed=1&height=1024",
-    "https://1drv.ms/i/s!Ai8p48X6HRWGoy9lRrCLrU07UbGC?embed=1&height=1024",
-    "https://1drv.ms/i/s!Ai8p48X6HRWGozZnGztBdfS1fT0E?embed=1&height=1024",
-    "https://1drv.ms/i/s!Ai8p48X6HRWGoyyidGLtObwzhM5p?embed=1&width=1024",
+    "https://res.cloudinary.com/dxmhi8ebw/image/upload/v1734323029/01_i5spei.jpg",
+    "https://res.cloudinary.com/dxmhi8ebw/image/upload/v1734323147/02_ysvo0j.jpg",
+    "https://res.cloudinary.com/dxmhi8ebw/image/upload/v1734323147/03_lk3p4r.jpg",
+    "https://res.cloudinary.com/dxmhi8ebw/image/upload/v1734323147/04_ka9s01.jpg",
+    "https://res.cloudinary.com/dxmhi8ebw/image/upload/v1734323147/05_xvlqkh.jpg",
+    "https://res.cloudinary.com/dxmhi8ebw/image/upload/v1734323148/06_gib5si.jpg",
+    "https://res.cloudinary.com/dxmhi8ebw/image/upload/v1734323148/07_jfvbzn.jpg",
+    "https://res.cloudinary.com/dxmhi8ebw/image/upload/v1734323148/08_ei59xl.jpg",
+    "https://res.cloudinary.com/dxmhi8ebw/image/upload/v1734323148/09_cvyesg.jpg",
+    "https://res.cloudinary.com/dxmhi8ebw/image/upload/v1734323148/10_mz4bua.jpg",
+    "https://res.cloudinary.com/dxmhi8ebw/image/upload/v1734323148/11_zpizky.jpg",
+    "https://res.cloudinary.com/dxmhi8ebw/image/upload/v1734323148/12_hjiyrw.jpg",
   ];
 
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -64,7 +65,7 @@ export default function Gallery() {
               onClick={() => setSelectedImage(selectedImage === image ? null : image)}
             >
               {loading[index] && (
-                <div className="w-full h-full animate-pulse">
+                <div className="absolute w-full h-full animate-pulse">
                   <div className="flex items-center justify-center w-full h-full bg-gray-300 sm:w-96 dark:bg-gray-700">
                     <svg className="w-10 h-10 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
                       <path d="M18 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4.376 10.481A1 1 0 0 1 16 15H4a1 1 0 0 1-.895-1.447l3.5-7A1 1 0 0 1 7.468 6a.965.965 0 0 1 .9.5l2.775 4.757 1.546-1.887a1 1 0 0 1 1.618.1l2.541 4a1 1 0 0 1 .028 1.011Z"/>
@@ -72,10 +73,14 @@ export default function Gallery() {
                   </div>
                 </div>
               )}
-              <img
+              <Image
                 alt={image}
                 src={`${image}`}
-                className={`h-full w-full object-cover object-center cursor-pointer ${loading[index] ? 'hidden' : 'block'}`}
+                width={200}
+                height={200}
+                className={`h-full w-full object-cover object-center cursor-pointer ${
+                  loading[index] ? 'opacity-0' : 'opacity-100'
+                }`}
                 onLoad={() => handleImageLoad(index)}
               />
             </div>
@@ -148,9 +153,11 @@ export default function Gallery() {
                 />
               </svg>
             </button>
-            <img
+            <Image
               alt={selectedImage}
               src={`${selectedImage}`}
+              width={600}
+              height={600}
               className="max-h-screen max-w-screen cursor-pointer object-contain"
             />
           </div>
