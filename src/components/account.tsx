@@ -12,36 +12,16 @@ interface Account {
 
 const bAccounts: Account[] = [
   {
-    bank: "신한은행",
-    number: "110-035-130325",
-    name: "최행찬",
-  },
-  {
-    bank: "NH농협",
-    number: "312-0033-1120-11",
-    name: "김복숙",
-  },
-  {
-    bank: "토스뱅크",
-    number: "1000-2031-3328",
+    bank: "OO뱅크",
+    number: "0000-0000-0000",
     name: "최수민",
   },
 ];
 
 const mAccounts: Account[] = [
   {
-    bank: "신한은행",
-    number: "110-433-874676",
-    name: "이진우",
-  },
-  {
-    bank: "신한은행",
-    number: "110-038-549442",
-    name: "권용선",
-  },
-  {
-    bank: "하나은행",
-    number: "276-910031-53207",
+    bank: "OO은행",
+    number: "000-000000-00000",
     name: "정현희",
   },
 ];
